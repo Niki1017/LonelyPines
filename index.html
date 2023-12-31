@@ -6,11 +6,16 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+	<!-- <meta name="description" content="Showcase 3D Effect with CSS, HTML, Swiper"> -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"> -->
+	<!-- <meta property="og:image" content="images/preview.jpg"> -->
 	<title>Главная</title>
-
 	<link rel="stylesheet" href="css/style.css">
-
+	<link rel="icon" href="images/favicon.png">
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
 	<script src="libs/gsap/gsap.min.js" defer></script>
 	<script src="libs/gsap/ScrollTrigger.min.js" defer></script>
 	<script src="libs/gsap/ScrollSmoother.min.js" defer></script>
@@ -20,8 +25,23 @@
 </head>
 
 <body>
-
 	<div class="wrapper">
+		<header>
+			<ul>
+				<li>
+					<a href="" alt="">Галлерея</a>
+				</li>
+				<li>
+					<a href="" alt="">Моды и ресурс паки</a>
+				</li>
+				<li>
+					<a href="" alt="">Лор LonelyPines</a>
+				</li>
+				<li>
+					<a href="" alt="">Участники</a>
+				</li>
+			</ul>
+		</header>
 		<div class="content">
 
 			<header class="main-header">
@@ -31,7 +51,7 @@
 						<div class="layers__title">Lonely Pines</div>
 					</div>
 					<div class="layer layers__base" style="background-image: url(img/layer-base.png);"></div>
-					<div class="layer layers__middle" style="background-image: url(img/layer-middle.png);"></div>
+					<!-- <div class="layer layers__middle" style="background-image: url(img/layer-middle.png);"></div> -->
 					<div class="layer layers__front" style="background-image: url(img/layer-front.png);"></div>
 				</div>
 			</header>
@@ -49,33 +69,93 @@
 
 				<!-- <div class="copy">© LonelyPines</div> -->
 			</article>
-						
-			<article class="main-cards layers" style="background-image: url(img/dungeon.jpg);">
-				<div class="main-cards__content">
-					<h2 class="main-cards__header">Наш HIGH STAFF</h2>
-					<div class="card">
-						<div class="pers">
-							<img src="img/Cat_play.png" alt="">
-							<h1>_CatPlay_</h1>
+
+			<section class="showcase">
+
+				<h2 class="showcase__header">УЧАСТНИКИ</span></h2>
+
+				<div class="showcase__content-wrapper">
+					<div class="showcase__content">
+
+						<div class="showcase-carousel">
+
+							<div class="swiper-wrapper">
+
+								<div class="swiper-slide showcase-carousel__item">
+									<div class="showcase-carousel__image-wrapper">
+										<div class="showcase-carousel__image-left">
+											<div class="showcase-carousel__image"
+												style="background-image: url(images/1.png);"></div>
+										</div>
+										<div class="showcase-carousel__image-right">
+											<div class="showcase-carousel__image"
+												style="background-image: url(images/1.png);"></div>
+										</div>
+									</div>
+									<p>Front</p>
+								</div>
+
+								<div class="swiper-slide showcase-carousel__item">
+									<div class="showcase-carousel__image-wrapper">
+										<div class="showcase-carousel__image-left">
+											<div class="showcase-carousel__image"
+												style="background-image: url(images/2.png);"></div>
+										</div>
+										<div class="showcase-carousel__image-right">
+											<div class="showcase-carousel__image"
+												style="background-image: url(images/2.png);"></div>
+										</div>
+									</div>
+									<p>Front Two</p>
+								</div>
+
+								<div class="swiper-slide showcase-carousel__item">
+									<div class="showcase-carousel__image-wrapper">
+										<div class="showcase-carousel__image-left">
+											<div class="showcase-carousel__image"
+												style="background-image: url(images/3.png);"></div>
+										</div>
+										<div class="showcase-carousel__image-right">
+											<div class="showcase-carousel__image"
+												style="background-image: url(images/3.png);"></div>
+										</div>
+									</div>
+									<p>Side</p>
+								</div>
+
+								<div class="swiper-slide showcase-carousel__item">
+									<div class="showcase-carousel__image-wrapper">
+										<div class="showcase-carousel__image-left">
+											<div class="showcase-carousel__image"
+												style="background-image: url(images/4.png);"></div>
+										</div>
+										<div class="showcase-carousel__image-right">
+											<div class="showcase-carousel__image"
+												style="background-image: url(images/4.png);"></div>
+										</div>
+									</div>
+									<p>Back</p>
+								</div>
+
+							</div>
+
 						</div>
-						<div class="pers">
-							<img src="img/Ogirov.png" alt="">
-							<h1>Ogirov</h1>
+
+						<div class="showcase-navigation">
+							<div class="showcase-navigation__prev"></div>
+							<div class="showcase-navigation__next"></div>
 						</div>
-						<div class="pers">
-							<img src="img/Nakesurtinuus.png" alt="">
-							<h1>Nakesurtinuus</h1>
-						</div>
-						<div class="pers">
-							<img src="img/RapsodDva.png" alt="">
-							<h1>RapsodDva</h1>
-						</div>
+
 					</div>
 				</div>
 
+				<video src="videos/smoke-background-optimized.mp4" class="showcase__video" autoplay loop muted></video>
 
-				<!-- <div class="copy">© LonelyPines</div> -->
-			</article>
+			</section>
+
+			<script src="libs/swiper/swiper-bundle.min.js"></script>
+
+			<script src="js/common.js"></script>
 
 		</div>
 	</div>
