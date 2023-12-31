@@ -138,4 +138,16 @@ body {
 
 .card img{
 	width: 300px;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+.pers{
+	display: inline-block;
+	/* background: aqua; */
+}
+
+.card h1{
+	margin-top: 20px;
+	display: block;
 }
